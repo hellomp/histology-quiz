@@ -27,12 +27,16 @@ export default {
 }
 h1{
   font-size: 4rem;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
 }
 h2{
   font-size: 3rem;
+  font-weight: bold;
   color: #FFF;
   margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 .logo{
   height: 200px;;
