@@ -66,7 +66,7 @@ export default {
   methods: {
     clickAlternative(alternativeId){
       if(this.actualQuestion.correct == alternativeId){
-        console.log('Correct')
+        this.correctCount += 1
         switch (alternativeId) {
           case 1:
             this.alternative1Correct = true
@@ -117,28 +117,29 @@ export default {
             break;
         }
       }
-      if(this.actualQuestionId == 2){
-        console.log('Finish')
-      }else{
-        this.activateNextButton()
-      }
+      this.activateNextButton()
     },
     activateNextButton(){
       this.showNextButton = true
     },
     loadNextQuestion(){
-      this.alternative1Correct = false;
-      this.alternative2Correct = false;
-      this.alternative3Correct = false;
-      this.alternative4Correct = false;
-      this.alternative1Wrong = false;
-      this.alternative2Wrong = false;
-      this.alternative3Wrong = false;
-      this.alternative4Wrong = false;
-      this.actualQuestionId += 1
-      console.log(this.actualQuestionId)
-      this.actualQuestion = this.questions[this.actualQuestionId]
-      this.showNextButton = false
+      if(this.actualQuestionId == 2){
+        console.log('Finish')
+        this.$router.push({path: `/result/${this.correctCount}`})
+      }else{
+        this.alternative1Correct = false;
+        this.alternative2Correct = false;
+        this.alternative3Correct = false;
+        this.alternative4Correct = false;
+        this.alternative1Wrong = false;
+        this.alternative2Wrong = false;
+        this.alternative3Wrong = false;
+        this.alternative4Wrong = false;
+        this.actualQuestionId += 1
+        console.log(this.actualQuestionId)
+        this.actualQuestion = this.questions[this.actualQuestionId]
+        this.showNextButton = false
+      }
     }
   },
   created(){
