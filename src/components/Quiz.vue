@@ -142,6 +142,7 @@ export default {
     padding-bottom: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   @media only screen and (min-width: 768px) {
     #image{
