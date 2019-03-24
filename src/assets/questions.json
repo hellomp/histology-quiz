@@ -13,7 +13,7 @@
       "alternative1": "Epitélio pavimentoso simples",
       "alternative2": "Epitélio de transição",
       "alternative3": "Epitélio cilíndrico simples",
-      "alternative4": "Epitélio cúbico simples",
+      "alternative4": "Epitélio pseudoestratificado",
       "correct": 1
     },
     {
@@ -34,10 +34,122 @@
     },
     {
       "image": "4.png",
-      "alternative1": "Epitélio cilídrico simples",
+      "alternative1": "Epitélio cilíndrico simples",
       "alternative2": "Epitélio pavimentoso simples",
       "alternative3": "Epitélio de transição",
       "alternative4": "Epitélio pseudoestratificado",
+      "correct": 2
+    },
+    {
+      "image": "5.png",
+      "alternative1": "Epitélio cúbico simples",
+      "alternative2": "Epitélio pavimentoso estratificado",
+      "alternative3": "Epitélio de transição",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 1
+    },
+    {
+      "image": "6.png",
+      "alternative1": "Epitélio cilíndrico simples",
+      "alternative2": "Epitélio pavimentoso simples",
+      "alternative3": "Epitélio pseudoestratificado",
+      "alternative4": "Epitélio cúbico simples",
+      "correct": 4
+    },
+    {
+      "image": "7.png",
+      "alternative1": "Epitélio cilíndrico estratificado",
+      "alternative2": "Epitélio estratificado cilíndrico",
+      "alternative3": "Epitélio cúbico simples",
+      "alternative4": "Epitélio cilíndrico simples",
+      "correct": 3
+    },
+    {
+      "image": "8.png",
+      "alternative1": "Epitélio cilíndrico simples",
+      "alternative2": "Epitélio estratificado cúbico",
+      "alternative3": "Epitélio cúbico simples",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 1
+    },
+    {
+      "image": "9.png",
+      "alternative1": "Epitélio estratificado cilíndrico",
+      "alternative2": "Epitélio estratificado pavimentoso",
+      "alternative3": "Epitélio cilíndrico simples",
+      "alternative4": "Epitélio cúbico simples",
+      "correct": 3
+    },
+    {
+      "image": "10.png",
+      "alternative1": "Epitélio de transição",
+      "alternative2": "Epitélio cilíndrico simples",
+      "alternative3": "Epitélio estratificado cilíndrico",
+      "alternative4": "Epitélio cúbico simples",
+      "correct": 2
+    },
+    {
+      "image": "11.png",
+      "alternative1": "Epitélio pseudoestratificado",
+      "alternative2": "Epitélio cilíndrico simples",
+      "alternative3": "Epitélio estratificado cúbico",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 2
+    },
+    {
+      "image": "12.png",
+      "alternative1": "Epitélio estratificado cilíndrico",
+      "alternative2": "Epitélio cilíndrico simples",
+      "alternative3": "Epitélio cúbico simples",
+      "alternative4": "Epitélio pseudoestratificado",
+      "correct": 4
+    },
+    {
+      "image": "13.png",
+      "alternative1": "Epitélio cilíndrico simples",
+      "alternative2": "Epitélio estratificado cúbico",
+      "alternative3": "Epitélio pseudoestratificado",
+      "alternative4": "Epitélio de transição",
+      "correct": 3
+    },
+    {
+      "image": "14.png",
+      "alternative1": "Epitélio pseudoestratificado",
+      "alternative2": "Epitélio estratificado cilíndrico",
+      "alternative3": "Epitélio de transição",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 1
+    },
+    {
+      "image": "15.png",
+      "alternative1": "Epitélio pseudoestratificado",
+      "alternative2": "Epitélio estratificado pavimentoso queratinizado",
+      "alternative3": "Epitélio de transição",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 2
+    },
+    {
+      "image": "16.png",
+      "alternative1": "Epitélio cúbico simples",
+      "alternative2": "Epitélio estratificado pavimentoso queratinizado",
+      "alternative3": "Epitélio pavimentoso simples",
+      "alternative4": "Epitélio estratificado pavimentoso não queratinizado",
+      "correct": 4
+    },
+    {
+      "image": "17.png",
+      "alternative1": "Epitélio estratificado pavimentoso queratinizado",
+      "alternative2": "Epitélio pavimentoso simples",
+      "alternative3": "Epitélio pseudoestratificado",
+      "alternative4": "Epitélio de transição",
+      "correct": 1
+    },
+    {
+      "image": "18.png",
+      "alternative1": "Epitélio estratificado pavimentoso queratinizado",
+      "alternative2": "Epitélio estratificado pavimentoso não queratinizado",
+      "alternative3": "Epitélio cúbico simples",
+      "alternative4": "Epitélio estratificado cúbico",
       "correct": 2
     }
   ]

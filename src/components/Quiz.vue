@@ -115,6 +115,7 @@ export default {
     }
   },
   created(){
+    console.log(questionsData.questions)
     this.questions = _.shuffle(questionsData.questions)
     this.actualQuestion = this.questions[this.actualQuestionId]
   },
