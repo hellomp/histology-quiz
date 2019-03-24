@@ -98,7 +98,6 @@ export default {
     },
     loadNextQuestion(){
       if(this.actualQuestionId == 2){
-        console.log('Finish')
         this.$router.push({path: `/result/${this.correctCount}`})
       }else{
         this.alternative1Correct = false;
@@ -110,16 +109,13 @@ export default {
         this.alternative3Wrong = false;
         this.alternative4Wrong = false;
         this.actualQuestionId += 1
-        console.log(this.actualQuestionId)
         this.actualQuestion = this.questions[this.actualQuestionId]
         this.showNextButton = false
       }
     }
   },
   created(){
-    console.log(questionsData)
     this.questions = _.shuffle(questionsData.questions)
-    console.log(this.questions)
     this.actualQuestion = this.questions[this.actualQuestionId]
   },
   components:{
@@ -138,7 +134,7 @@ export default {
     }
   }
   #image{
-    padding: 2rem;
+    padding: 1rem;
     padding-bottom: 0;
   }
   @media only screen and (min-width: 768px) {
@@ -150,7 +146,12 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
+  }
+   @media only screen and (min-width: 768px) {
+    #options{
+      padding: 2rem;
+    }
   }
   #next{
     margin-top: 1rem;
@@ -162,7 +163,7 @@ export default {
     border-width: 3px;
     border-color: #55E6C1;
     border-radius: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #55E6C1;
     margin-bottom: 0.5rem;
