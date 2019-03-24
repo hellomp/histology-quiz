@@ -9,7 +9,7 @@
       <button class="alternative-button" :class="{correct:alternative3Correct, wrong:alternative3Wrong}" @click="clickAlternative(3)">{{actualQuestion.alternative3}}</button>
       <button class="alternative-button" :class="{correct:alternative4Correct, wrong:alternative4Wrong}" @click="clickAlternative(4)">{{actualQuestion.alternative4}}</button>
       <div id="next">
-        <button v-if="showNextButton" @click="loadNextQuestion()" class="next-button">></button>
+        <button v-show="showNextButton" @click="loadNextQuestion()" class="next-button"><font-awesome-icon icon="chevron-right" /></button>
       </div>
     </div>
   </div>
@@ -39,6 +39,9 @@ export default {
   },
   methods: {
     clickAlternative(alternativeId){
+      if(this.showNextButton){
+        return
+      }
       if(this.actualQuestion.correct == alternativeId){
         this.correctCount += 1
         switch (alternativeId) {
@@ -115,7 +118,6 @@ export default {
     }
   },
   created(){
-    console.log(questionsData.questions)
     this.questions = _.shuffle(questionsData.questions)
     this.actualQuestion = this.questions[this.actualQuestionId]
   },
@@ -156,6 +158,7 @@ export default {
   }
   #next{
     margin-top: 1rem;
+    min-height: 52px;
   }
   .alternative-button{
     padding: 0.5rem;
@@ -193,11 +196,11 @@ export default {
     color: #FFF;
   }
   .next-button{
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.4rem;
     border-radius: 50%;
     background-color: #55E6C1;
     border: none;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
