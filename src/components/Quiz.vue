@@ -16,6 +16,7 @@
 </template>
 <script>
 import QuestionImage from './Image.vue'
+import questionsData from '../assets/questions.json'
 
 export default {
   name: 'Quiz',
@@ -33,34 +34,7 @@ export default {
       alternative2Wrong: false,
       alternative3Wrong: false,
       alternative4Wrong: false,
-      questions: [{
-          id: 0,
-          image: 'Example.png',
-          alternative1: 'Tecido conjuntivo',
-          alternative2: 'Tecido epitelial',
-          alternative3: 'Tecido nervoso',
-          alternative4: 'Tecido mucoso',
-          correct: 2
-        },
-        {
-          id: 1,
-          image: 'Example.png',
-          alternative1: 'Tecido adversativo',
-          alternative2: 'Tecido figurado',
-          alternative3: 'Tecido abstrato',
-          alternative4: 'Tecido modernista',
-          correct: 3
-        },
-        {
-          id: 2,
-          image: 'Example.png',
-          alternative1: 'Tecido 1',
-          alternative2: 'Tecido 2',
-          alternative3: 'Tecido 3',
-          alternative4: 'Tecido 4',
-          correct: 1
-        },
-      ]
+      questions: []
     }
   },
   methods: {
@@ -143,8 +117,8 @@ export default {
     }
   },
   created(){
-    console.log(this.actualQuestionId)
-    this.questions = _.shuffle(this.questions)
+    console.log(questionsData)
+    this.questions = _.shuffle(questionsData.questions)
     console.log(this.questions)
     this.actualQuestion = this.questions[this.actualQuestionId]
   },
@@ -165,6 +139,12 @@ export default {
   }
   #image{
     padding: 2rem;
+    padding-bottom: 0;
+  }
+  @media only screen and (min-width: 768px) {
+    #image{
+      padding: 2rem;
+    }
   }
   #options{
     display: flex;
@@ -182,10 +162,11 @@ export default {
     border-width: 3px;
     border-color: #55E6C1;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #55E6C1;
     margin-bottom: 0.5rem;
+    transition: background-color 0.1s;
   }
   @media only screen and (min-width: 768px) {
     .alternative-button{

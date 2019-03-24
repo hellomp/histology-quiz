@@ -28,7 +28,7 @@ export default {
 h1{
   font-size: 4rem;
   font-weight: bold;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 h2{
@@ -52,6 +52,7 @@ h2{
   font-weight: bold;
   color: #55E6C1;
   margin-bottom: 0.5rem;
+  transition: background-color 0.1s;
 }
 .start-button:hover{
   background-color:#55E6C1;

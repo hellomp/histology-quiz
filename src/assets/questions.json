@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "image": "0.png",
+      "alternative1": "Epitélio estratificado pavimentoso",
+      "alternative2": "Epitélio cúbico simples",
+      "alternative3": "Epitélio pavimentoso simples",
+      "alternative4": "Epitélio estratificado cúbico",
+      "correct": 3
+    },
+    {
+      "image": "1.png",
+      "alternative1": "Epitélio pavimentoso simples",
+      "alternative2": "Epitélio de transição",
+      "alternative3": "Epitélio cilíndrico simples",
+      "alternative4": "Epitélio cúbico simples",
+      "correct": 1
+    },
+    {
+      "image": "2.png",
+      "alternative1": "Epitélio cilíndrico simples",
+      "alternative2": "Epitélio pseudoestratificado",
+      "alternative3": "Epitélio cúbico simples",
+      "alternative4": "Epitélio pavimentoso simples",
+      "correct": 4
+    },
+    {
+      "image": "3.png",
+      "alternative1": "Epitélio pseudoestratificado",
+      "alternative2": "Epitélio cúbico simples",
+      "alternative3": "Epitélio pavimentoso simples",
+      "alternative4": "Epitélio estratificado cúbico",
+      "correct": 3
+    },
+    {
+      "image": "4.png",
+      "alternative1": "Epitélio cilídrico simples",
+      "alternative2": "Epitélio pavimentoso simples",
+      "alternative3": "Epitélio de transição",
+      "alternative4": "Epitélio pseudoestratificado",
+      "correct": 2
+    }
+  ]
+}

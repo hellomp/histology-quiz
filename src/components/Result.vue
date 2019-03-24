@@ -31,6 +31,7 @@ h1{
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 2rem;
+  line-height: 1;
 }
 .restart-button{
   padding: 0.5rem;
@@ -43,6 +44,7 @@ h1{
   font-weight: bold;
   color: #55E6C1;
   margin-bottom: 0.5rem;
+  transition: background-color 0.1s;
 }
 .restart-button:hover{
   background-color:#55E6C1;

@@ -1,5 +1,5 @@
 <template>
-  <img :src="require(`@/assets/${image}`)" alt="path">
+  <img :src="require(`@/assets/slides/${image}`)" alt="path">
 </template>
 <script>
 export default {
@@ -9,7 +9,7 @@ export default {
 <style scoped>
 img {
   border-radius: 50%;
-  max-width: 100%;
+  width: 100%;
 }
 </style>
 
