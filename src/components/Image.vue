@@ -9,7 +9,8 @@ export default {
 <style scoped>
 img {
   border-radius: 50%;
-  width: 100%;
+  max-width: 100%;
+  max-height: 85vh;
 }
 </style>
 

@@ -100,7 +100,7 @@ export default {
       this.showNextButton = true
     },
     loadNextQuestion(){
-      if(this.actualQuestionId == 2){
+      if(this.actualQuestionId == 9){
         this.$router.push({path: `/result/${this.correctCount}`})
       }else{
         this.alternative1Correct = false;
@@ -128,6 +128,7 @@ export default {
 </script>
 <style scoped>
   #quiz {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -139,6 +140,8 @@ export default {
   #image{
     padding: 1rem;
     padding-bottom: 0;
+    display: flex;
+    align-items: center;
   }
   @media only screen and (min-width: 768px) {
     #image{
